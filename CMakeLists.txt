@@ -12,11 +12,11 @@ add_executable(hello_world ${SOURCE_DIR}/main.cpp)
 # Visual Studio用の設定
 if(MSVC)
     set_target_properties(hello_world PROPERTIES
-        RUNTIME_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/build/windows
-        RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/build/windows
+        RUNTIME_OUTPUT_DIRECTORY_DEBUG ${PROJECT_SOURCE_DIR}/build
+        RUNTIME_OUTPUT_DIRECTORY_RELEASE ${PROJECT_SOURCE_DIR}/build
     )
 else()
     set_target_properties(hello_world PROPERTIES
-        RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build/linux
+        RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build
     )
 endif()

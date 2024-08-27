@@ -1,4 +1,7 @@
 {
+    "cmake.generator": "Unix Makefiles",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+
     "files.associations": {
         "atomic": "cpp",
         "bit": "cpp",
